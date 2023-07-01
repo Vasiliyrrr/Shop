@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Panel.HomeActivity">
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_above="@+id/dawn_panel1"
+        android:layout_marginBottom="-710dp"/>
+    <LinearLayout
+        android:id="@+id/dawn_panel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_marginLeft="50dp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cart"
+            android:layout_marginTop="690dp"
+            android:layout_marginLeft="42dp" />
+
+        <ImageView
+            android:id="@+id/favorites"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/favorites"
+            android:layout_marginTop="690dp"
+            android:layout_marginLeft="42dp" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:layout_marginTop="690dp"
+            android:layout_marginLeft="42dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+        android:layout_below="@+id/dawn_panel1"
+        android:layout_marginLeft="52dp"
+        android:text="Главная"/>
+
+    <TextView
+        android:id="@+id/cart_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+        android:layout_below="@+id/dawn_panel1"
+        android:layout_marginLeft="132dp"
+        android:text="Корзина"/>
+    <TextView
+        android:id="@+id/favorites_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+        android:layout_below="@+id/dawn_panel1"
+        android:layout_marginLeft="210dp"
+        android:text="Избранное"/>
+    <TextView
+        android:id="@+id/user_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+        android:layout_below="@+id/dawn_panel1"
+        android:layout_marginLeft="296dp"
+        android:text="Профиль"/>
+
+
+    <EditText
+        android:id="@+id/home_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/search"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="80dp"
+        android:hint="Поиск"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/catalog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/catalog"
+        android:layout_below="@+id/home_search"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:id="@+id/tov"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/tov"
+        android:layout_below="@+id/home_search"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="220dp"/>
+
+    <ImageView
+        android:id="@+id/sales"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/sales"
+        android:layout_below="@+id/tov"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+
+
+</RelativeLayout>
